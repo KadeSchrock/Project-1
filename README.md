@@ -10,4 +10,4 @@ Index-
   
   [Problem Frames](https://github.com/KadeSchrock/Project-1/tree/main/Planning/Problem%20Frames)
   
-  [Security Statement](https://github.com/KadeSchrock/Project-1/blob/main/Planning/Security-Requirements/SecurityStatement.md)
+  [Security Statement](https://github.com/KadeSchrock/Project-1/blob/main/Planning/%20security-statement.md)
