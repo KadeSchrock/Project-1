@@ -1,4 +1,4 @@
-Idea- Website for selling snowboards
+Rough Problem Statement- We are seeking to create a website designed to sell snowboards.
 Index-
   Members (link after file conversion)
   
