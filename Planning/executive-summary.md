@@ -1,3 +1,4 @@
+## Executive Summary
 1. The Problem- We need to expand our snowboarding business and customer accessability to our product in order to expand our market
 We want a website to advertize our snowboards, enable customers to learn more about our snowboards, and provide customers opportunity to purchase them.
 2. Process to Solve the Problem-
