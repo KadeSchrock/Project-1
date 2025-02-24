@@ -1,3 +1,4 @@
+## Outcome Summary
 Desired Outcomes
 Snowboard retail website made using HTML, CSS, and JavaScript
 
