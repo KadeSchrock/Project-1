@@ -1,12 +1,12 @@
-USER REQUIREMENTS
+## USER REQUIREMENTS
 1. Internet connection
 2. End device to connect to website
 
-HARDWARE REQUIREMENTS
+## HARDWARE REQUIREMENTS
 1. Computers
 2. Server
 
-SOFTWARE REQUIREMENTS
+## SOFTWARE REQUIREMENTS
 Development
 1. VS Code
    a. JavaScript
@@ -22,7 +22,7 @@ Deployment
 1. Truenas (website hosting)
 
 
-SECURITY REQUIREMENTS
+## SECURITY REQUIREMENTS
 
 User Security
 1. Payment Info Protection
