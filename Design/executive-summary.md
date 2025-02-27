@@ -1,17 +1,21 @@
-**PAGES**  
+**PAGES**
+* Incorporates design elements from HTML, CSS, and JavaScript
+
 Home Page 
 
 * Our logo at the very top of the page in the top left corner  
 * Bar at the top that can take you to each page of the website (products, checkout/cart, Third Party retailers page  
-* Background with one of our snowboards in use   
-* About us/mission statement paragraph at the bottom of the homepage
+* Background with one of our snowboards in use
+* Preview of our product offerings   
+* About us/contact us/mission statement paragraph at the bottom of the homepage
 
 Products Page / Individual Products Pages
 
 * Bar at the top that can take you to each page of the website (products, checkout/cart, Third Party retailers page  
 * Tiles of each snowboard that we sell  
-  * On each product tile you should be able to open them to a new page that shows you more information about each model and their pricings  
+  * On each product tile you should be able to open them to a new page that shows you more information about each model (product uses, FAQs, ratings, testimonials) and their pricings  
   * Button to add item to cart on each product tile
+* Customer ratings and testimonials for each product listing
 
 Shopping Cart / Checkout Page
 
