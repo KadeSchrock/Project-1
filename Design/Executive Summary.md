@@ -1,0 +1,43 @@
+**PAGES**  
+Home Page 
+
+* Our logo at the very top of the page in the top left corner  
+* Bar at the top that can take you to each page of the website (products, checkout/cart, Third Party retailers page  
+* Background with one of our snowboards in use   
+* About us/mission statement paragraph at the bottom of the homepage
+
+Products Page / Individual Products Pages
+
+* Bar at the top that can take you to each page of the website (products, checkout/cart, Third Party retailers page  
+* Tiles of each snowboard that we sell  
+  * On each product tile you should be able to open them to a new page that shows you more information about each model and their pricings  
+  * Button to add item to cart on each product tile
+
+Shopping Cart / Checkout Page
+
+* Bar at the top that can take you to each page of the website (products, checkout/cart, Third Party retailers page  
+* Buttons to be able to remove desired items from your cart  
+* Total Price of your order   
+* Button to take you to payment page
+
+Third Party Retailer Page
+
+* Bar at the top that can take you to each page of the website (products, checkout/cart, Third Party retailers page  
+* Page including our retailers that you can buy from in person
+
+**SYSTEMS**  
+Shopping Cart
+
+* Items must stay in the cart while moving across different pages within the website  
+* Will be a simple container for the items you select
+
+Payment System
+
+* Simple submission form style of payment  
+* User is able to input their payment information and if put in correctly they website will notify them of a successful purchase  
+* No background purchase handling, just the two requirements above
+
+TrueNas Hosting
+
+* Website hosted through a virtual machine running on TrueNas server
+
