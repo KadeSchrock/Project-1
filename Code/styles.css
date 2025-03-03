@@ -14,49 +14,52 @@ body {
     
 }
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow:visible;
-    background-color: black;
-    opacity: 80%;
-  }
+ul {
+  top: 0;
+  left: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow:visible;
+  background-color: black;
+  opacity: 80%;
+}
   
-  li {
-    float: right;
-  }
+li {
+  float: right;
+}
   
-ul a img {
-    max-height: 85px;
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  margin: 20px;
+  padding: 5px;
+  text-decoration: none;
+}
+  
+a.active {
+  background-color: #6db0a9;    
 }
 
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    font-size: 24px;
-    margin: 20px;
-    padding: 5px;
-    text-decoration: none;
-  }
-  
-  a.active {
-    background-color: #6db0a9;    
-  }
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: gray;
+}
 
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: gray;
-  }
-
-  footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    opacity: 80%;
-    color: white;
-    text-align: center;
-  }
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  max-height: 90px;
+  background-color: black;
+  opacity: 80%;
+  font-size: 14px;
+  color: white;
+  column-count: 3;
+  column-width: 25%;
+  text-align: center;
+}
