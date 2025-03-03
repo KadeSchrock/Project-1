@@ -2,16 +2,61 @@
 
 /*
 Navigation Bar
-Initial code sourced from Materialize
-https://materializecss.com/navbar.html
+Initial code sourced from W3Schools
+https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_float
 */
-<nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Logo</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
-      </ul>
-    </div>
-  </nav>
+
+body {
+    background-image: url(snowboarder-page-background.PNG);
+    background-blend-mode:luminosity;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:visible;
+    background-color: black;
+    opacity: 80%;
+  }
+  
+  li {
+    float: right;
+  }
+  
+ul a img {
+    max-height: 85px;
+}
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    margin: 20px;
+    padding: 5px;
+    text-decoration: none;
+  }
+  
+  a.active {
+    background-color: #6db0a9;    
+  }
+
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: gray;
+  }
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    opacity: 80%;
+    color: white;
+    text-align: center;
+  }
