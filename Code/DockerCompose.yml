@@ -1,8 +1,0 @@
-
-    services:
-      web:
-        build: 
-	  context: https://github.com/KadeSchrock/Project-1.git
-          dockerfile: Code/Dockerfile
-        ports:
-          - "9050:80"
