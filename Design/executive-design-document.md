@@ -43,5 +43,7 @@ Payment System
 
 TrueNas Hosting
 
-* Website hosted through a virtual machine running on TrueNas server
+* Website hosted through a docker container running on TrueNas server
+* Docker container runs nginx to serve our html files onto our website from our code folder on our Github Repository
+* Setup custom app on TrueNas that uses a docker yaml file to point to our github repository and run the web based files within it 
 
