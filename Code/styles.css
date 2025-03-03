@@ -63,3 +63,8 @@ footer {
   column-width: 25%;
   text-align: center;
 }
+
+.cart-nav {
+  text-align: center; 
+  font-size: large;
+}

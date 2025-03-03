@@ -1,40 +1,57 @@
 <!DOCTYPE html>
 
 <html lang="en-us">
+
 <head>
-<title>BlazeBoards Home</title>
-<link rel="stylesheet" href="styles.css">
+    <title>BlazeBoards Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </head>
 
 <body>
 
-<ul>
-    <a href="index.html"><img src="blazeboards-logo.png" alt="BlazeBoards" height="85px" width="500px"></a>
-    <li><a href="payment-page.html">Checkout</a></li>
-    <li><a href="#">Other Retailers</a></li>
-    <li><a href="product-listing-page.html">Products</a></li>
-    <li><a href="information-page.html">Information</a></li>
-    <li><a href="index.html" class="active">Home</a></li>
-</ul>  
+    <ul>
+        <a href="index.html"><img src="blazeboards-logo.png" alt="BlazeBoards" height="85px" width="500px"></a>
+        <li><a href="#" data-target="shopping-cart" class="sidenav-trigger"><img src="shopping-cart.png"
+                    alt="shopping-cart" height="30px"></a></li>
+        <li><a href="#">Other Retailers</a></li>
+        <li><a href="product-listing-page.html">Products</a></li>
+        <li><a href="information-page.html">Information</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+    </ul>
+    <ul id="shopping-cart" class="sidenav right">
+        <div class="cart-nav-title cart-nav">Shopping Cart</div>
+    </ul>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, { edge: 'right' });
+        });
+    </script>
 
 </body>
 
 <footer>
 
-About Us: BlazeBoards, Inc.<br>
+    About Us: BlazeBoards, Inc.<br>
 
-<address>
-206 Discovery Hall Blvd<br>
-Kearney, NE 68849
-</address>
+    <address>
+        206 Discovery Hall Blvd<br>
+        Kearney, NE 68849
+    </address>
 
-Contact Us: (308)865-0000<br>
-            support@blazeboards.com<br><br>
+    Contact Us: (308)865-0000<br>
+    support@blazeboards.com<br><br>
 
-Our Mission: To provide comfortable, 
-heated snowboards for all<br>
-winter sport enthusiasts to help them stay on the slopes in<br>
-even the most extreme conditions.
+    Our Mission: To provide comfortable,
+    heated snowboards for all<br>
+    winter sport enthusiasts to help them stay on the slopes in<br>
+    even the most extreme conditions.
 
 </footer>
 
