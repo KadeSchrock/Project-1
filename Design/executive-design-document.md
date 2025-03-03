@@ -8,6 +8,21 @@ Home Page
 * Background with one of our snowboards in use
 * Preview of our product offerings   
 * About us/contact us/mission statement paragraph at the bottom of the homepage
+* HTML Elements:
+     * title (name of the webpage): BlazeBoards Home
+     * link (refers to CSS file): styles.css; stylesheet relationship
+     * body (main area of webpage): includes navigation bar, background image, and will include product photos in the future
+          * a img (image with an interactive link): displays company logo with a link to the homepage
+          * li a (links to other webpages): refers to other webpages with links to them
+     * footer (bottom of webpage): includes About Us, Contact Us, and Mission Statement
+* CSS Element Styles:
+     * body: background-image, background-blend-mode, background-repeat, background-size
+     * ul (unordered list): top, left, list-style-type, margin, padding, overflow, background-color, opacity
+     * li (list items): float
+     * li a (listed links): display, color, text-align, font-size, margin, padding, text-decoration
+     * a.active (current webpage identifier): background-color
+     * li a:hover(shows cursor placement in navigation bar): background-color
+     * footer (bottom of webpage): position, left, bottom, width, max-height, background-color, opacity, font-size, color, column-count, column-width, text-align
 
 Products Page / Individual Products Pages
 
