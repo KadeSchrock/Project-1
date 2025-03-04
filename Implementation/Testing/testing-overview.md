@@ -7,6 +7,7 @@ In order to secure our website it is incredibly important to test, both to ensur
 	- Cart button opens the cart
 	- Product buttons lead to the correct product
 	- Confirm payment button stores info and confirms payment
+- Items inside cart carry over between pages and sessions 
 - Payment info stores the correct information, and is encrypted
 - Test to ensure that when items are added to cart, the correct item is added 
 - All products have the correct information attached to them
