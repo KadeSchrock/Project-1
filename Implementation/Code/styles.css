@@ -44,9 +44,13 @@ a.active {
   background-color: #6db0a9;    
 }
 
-/* Change the link color to #111 (black) on hover */
+/* Change the link color to gray on hover */
 li a:hover {
   background-color: gray;
+}
+
+button:hover {
+  background-color: darkslategray;
 }
 
 footer {
@@ -67,4 +71,118 @@ footer {
 .cart-nav {
   text-align: center; 
   font-size: large;
+}
+
+#featured-product-prompt {
+  position: absolute;
+  top: 105px;
+  left: 15px;
+  bottom: 140px;
+  background-color: white;
+  opacity: 80%;
+  height: 365px;
+  width: 500px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#featured-board {
+  position: absolute;
+  left: 20px;
+  max-height: 310px;
+}
+
+#featured-board-name {
+  text-align: right;
+  position: absolute;
+  right: 30px;
+}
+
+#featured-board-price {
+  text-align: right;
+  position: absolute;
+  right: 30px;
+  font-size: 40px;
+  color: red;
+}
+
+#product-one-prompt {
+  position: absolute;
+  top: 105px;
+  left: 15px;
+  bottom: 140px;
+  background-color: white;
+  opacity: 80%;
+  height: 365px;
+  width: 365px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#product-one {
+  position: absolute;
+  left: 20px;
+  height: 270px;
+  width: 325px;
+}
+
+#product-one-price {
+  position: absolute;
+  left: 20px;
+  bottom: -18px;
+  font-size: 28px;
+  color: black;
+  text-align: left;
+}
+
+#add-to-cart-button {
+  position: absolute;
+  bottom: 17px;
+  right: 20px;
+  height: 25px;
+  width: 100px;
+  z-index: 3;
+  font-size: 16px;
+}
+
+#more-info-button {
+  position: absolute;
+  bottom: 17px;
+  right: 125px;
+  z-index: 3;
+  height: 25px;
+  width: 100px;
+  font-size: 16px;
+}
+
+#product-two-prompt {
+  position: absolute;
+  top: 105px;
+  left: 415px;
+  bottom: 140px;
+  background-color: white;
+  opacity: 80%;
+  height: 365px;
+  width: 365px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#product-two {
+  position: absolute;
+  left: 20px;
+  height: 270px;
+  width: 325px;
+}
+
+#product-two-price {
+  position: absolute;
+  left: 20px;
+  bottom: -18px;
+  font-size: 28px;
+  color: black;
+  text-align: left;
 }
