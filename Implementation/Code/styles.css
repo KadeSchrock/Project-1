@@ -243,3 +243,21 @@ footer {
   width: 100px;
   font-size: 16px;
 }
+
+.checked {
+  color: orange;
+}
+
+#testimonial-one {
+  position: absolute;
+  top: 50px;
+  text-align: center;
+  line-height: 35px;
+}
+
+#testimonial-two {
+  position: absolute;
+  top: 170px;
+  text-align: center;
+  line-height: 35px;
+}

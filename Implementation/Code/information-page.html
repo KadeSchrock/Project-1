@@ -1,12 +1,105 @@
 <!DOCTYPE html>
 
 <html lang="en-us">
+
 <head>
-<title>BlazeBoards Information</title>
+    <title>BlazeBoards Information</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="shopping-cart.js"></script>
+
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+
 <body>
 
+    <ul>
+        <a href="index.html"><img src="blazeboards-logo.png" alt="BlazeBoards" height="85px" width="500px"></a>
+        <li><a href="#" data-target="shopping-cart" class="sidenav-trigger"><img src="shopping-cart.png"
+                    alt="shopping-cart" height="30px"></a></li>
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Other Retailers</a></li>
+        <li><a href="product-listing-page.html">Products</a></li>
+        <li><a href="information-page.html" class="active">Information</a></li>
+        <li><a href="index.html">Home</a></li>
+    </ul>
+    <ul id="shopping-cart" class="sidenav right">
+        <div id="cart-nav" class="cart-nav-title cart-nav">Shopping Cart</div>
+        <div id="cart-checkout">
+            <p id="cart-total"></p>
+            <a class="waves-effect waves-light btn #6db0a9" href="payment-page.html">Proceed to Checkout</a>
+        </div>
+    </ul>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, { edge: 'right' });
+        });
+    </script>
 
+    <div id="product-one-prompt">BlazeBoard MKI<br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p id="testimonial-one">"I have never been so warm in such cold weather!"<br>-Billy B.</p>
+        <p id="testimonial-two">"One of the best purchases I have ever made!"<br>-Jane S.</p>
+        <p id="product-price">$499.99</p>
+        <button type="button" id="more-info-button" onclick="location.href='product-listing-page.html'">Products</button>
+        <button type="button" id="add-to-cart-button" onclick="addItem(productsList[0])">Add to Cart</button>
+    </div>
+
+    <div id="product-two-prompt">BlazeBoard Premium<br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <p id="testimonial-one">"This BlazeBoard provides the ultimate riding experience!"<br>-Ricky N.</p>
+        <p id="testimonial-two">"Anyone who wants to hit the slopes needs to buy this board!"<br>-Tyler M.</p>
+        <p id="product-price">$649.99</p>
+        <button type="button" id="more-info-button" onclick="location.href='product-listing-page.html'">Products</button>
+        <button type="button" id="add-to-cart-button" onclick="addItem(productsList[1])">Add to Cart</button>
+    </div>
+    
+    <div id="product-three-prompt">BlazeBoard Sport<br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p id="testimonial-one">"Way more comfortable than my old snowboard!"<br>-Emma F.</p>
+        <p id="testimonial-two">"The BlazeBoard Sport was built for the halfpipe!"<br>-Jacob L.</p>
+        <p id="product-price">$599.99</p>
+        <button type="button" id="more-info-button" onclick="location.href='product-listing-page.html'">Products</button>
+        <button type="button" id="add-to-cart-button" onclick="addItem(productsList[2])">Add to Cart</button>
+    </div>
 
 </body>
+
+<footer>
+
+    About Us: BlazeBoards, Inc.<br>
+
+    <address>
+        206 Discovery Hall Blvd<br>
+        Kearney, NE 68849
+    </address>
+
+    Contact Us: (308)865-0000<br>
+    support@blazeboards.com<br><br>
+
+    Our Mission: To provide comfortable,
+    heated snowboards for all<br>
+    winter sport enthusiasts to help them stay on the slopes in<br>
+    even the most extreme conditions.
+
+</footer>
+
 </html>
