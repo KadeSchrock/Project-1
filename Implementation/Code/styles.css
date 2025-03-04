@@ -82,7 +82,7 @@ footer {
   opacity: 100%;
 }
 
-#quantity-1, #quantity-2, #quantity-3 {
+#quantity-0, #quantity-1, #quantity-2 {
   width: 30px;
   height: 20px;
 }

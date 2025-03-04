@@ -1,19 +1,19 @@
 var productsList = [{
-    id: 1,
+    id: 0,
     name: "BlazeBoard MKI",
     price: 499.99,
     image: "snowboard-design-one.jpg",
     stock: 32
 }, {
-    id: 2,
-    name: "BlazeBoard MKII",
-    price: 499.99,
+    id: 1,
+    name: "BlazeBoard Premium",
+    price: 649.99,
     image: "snowboard-design-two.jpg",
     stock: 20
 }, {
-    id: 3,
-    name: "BlazeBoard MKIII",
-    price: 499.99,
+    id: 2,
+    name: "BlazeBoard Sport",
+    price: 599.99,
     image: "snowboard-design-three.jpg",
     stock: 36
 }];
@@ -33,7 +33,7 @@ window.onload = function () {
                 if (key != "total") {
                     var product = productsList[key];
                     // create item card
-                    var newElement = `<li id="product-${product.id}"><div class="col s12 m7"><div class="card horizontal center-align"><div class="card-stacked"><div class="card-content"><div class="card-image"><img src="${product.image}" id="center"></div><div id="card-text-content"><p id="product-name">${product.name}</p><p id="price">$${product.price}</p></div><label for="quantity-${product.id}">Quantity:</label>&ensp;<input type="number" name="quantity-${product.id}" id="quantity-${product.id}" value=${cart[key].quantity} min=1 max=${product.stock} onChange="updateItem(productsList[${product.id - 1}])">&ensp;<button onclick="removeItem(productsList[${product.id - 1}])">Remove</button></div></div></div></div></li>`;
+                    var newElement = `<li id="product-${product.id}"><div class="col s12 m7"><div class="card horizontal center-align"><div class="card-stacked"><div class="card-content"><div class="card-image"><img src="${product.image}" id="center"></div><div id="card-text-content"><p id="product-name">${product.name}</p><p id="price">$${product.price}</p></div><label for="quantity-${product.id}">Quantity:</label>&ensp;<input type="number" name="quantity-${product.id}" id="quantity-${product.id}" value=${cart[key].quantity} min=1 max=${product.stock} onChange="updateItem(productsList[${product.id}])">&ensp;<button onclick="removeItem(productsList[${product.id}])">Remove</button></div></div></div></div></li>`;
                     // display item card
                     element.insertAdjacentHTML('afterend', newElement);
                 }
@@ -56,6 +56,7 @@ function addItem(product) {
         cart[product.id].quantity += 1;
         // add to total
         cart.total += product.price;
+        cart.total = Math.round(cart.total * 100) / 100
         // display total
         cartTotal.innerHTML = "Total: $" + cart.total;
     } else {
@@ -71,9 +72,11 @@ function addItem(product) {
         };
         // adjust total
         cart.total += product.price;
+        cart.total = Math.round(cart.total * 100) / 100
         // display total
         cartTotal.innerHTML = "Total: $" + cart.total;
     }
+
     jsonString = JSON.stringify(cart);
     sessionStorage.setItem("cart", jsonString);
 }
