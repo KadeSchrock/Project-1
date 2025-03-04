@@ -20,7 +20,3 @@ In order to secure our website it is incredibly important to test, both to ensur
 		- Ensure that input is a specific amount of characters and only comprised of numbers
 	- Test shopping cart
 		- Test shopping cart for and issues caused by adding specific items or a large number of items
-	- Test for unintended effect of user input
-		- Ensure user input cannot break website elements (such as formatting)
-		- Ensure that user action only effects elements it's supposed to (such as buttons and text fields)
-
