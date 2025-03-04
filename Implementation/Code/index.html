@@ -10,6 +10,7 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="shopping-cart.js"></script>
 
 </head>
 
@@ -25,7 +26,25 @@
         <li><a href="index.html" class="active">Home</a></li>
     </ul>
     <ul id="shopping-cart" class="sidenav right">
-        <div class="cart-nav-title cart-nav">Shopping Cart</div>
+        <div id="cart-nav" class="cart-nav-title cart-nav">Shopping Cart</div>
+        <li>
+            <div class="col s12 m7">
+                <div class="card horizontal">
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <img src="snowboarder-page-background.PNG">
+                            </div>
+                            <p>Snowboard item test</p>
+                            <p>$179.99</p>
+                            <label for="quantity">Quantity:</label>&ensp;
+                            <input type="number" name="quantity" id="quantity" value="1">&ensp;
+                            <button onclick="removeItem()">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
     </ul>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -39,9 +58,10 @@
         <p id="featured-board-name">
             BlazeBoard MKI<br>
             ON SALE NOW!
-            <p id="featured-board-price"><br><br><br>$499.99</p>
-            <button type="button" id="featured-more-info" onclick="location.href='information-page.html'">More Info.</button>
-            <button type="button" id="featured-add-to-cart" onclick="#">Add to Cart</button>
+        <p id="featured-board-price"><br><br><br>$499.99</p>
+        <button type="button" id="featured-more-info" onclick="location.href='information-page.html'">More
+            Info.</button>
+        <button type="button" id="featured-add-to-cart" onclick="addItem()">Add to Cart</button>
         </p>
     </div>
 

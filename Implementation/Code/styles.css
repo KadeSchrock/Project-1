@@ -68,9 +68,14 @@ footer {
   text-align: center;
 }
 
+/* Shopping Cart styling */
 .cart-nav {
   text-align: center; 
   font-size: large;
+}
+#quantity {
+  width: 30px;
+  height: 20px;
 }
 
 #featured-product-prompt {
