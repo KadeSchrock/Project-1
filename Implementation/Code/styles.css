@@ -7,11 +7,11 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_float
 */
 
 body {
-    background-image: url(snowboarder-page-background.PNG);
-    background-blend-mode:luminosity;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+  background-image: url(snowboarder-page-background.PNG);
+  background-blend-mode: luminosity;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 ul {
@@ -20,15 +20,15 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow:visible;
+  overflow: visible;
   background-color: black;
   opacity: 80%;
 }
-  
+
 li {
   float: right;
 }
-  
+
 
 li a {
   display: block;
@@ -39,9 +39,9 @@ li a {
   padding: 5px;
   text-decoration: none;
 }
-  
+
 a.active {
-  background-color: #6db0a9;    
+  background-color: #6db0a9;
 }
 
 /* Change the link color to gray on hover */
@@ -70,14 +70,33 @@ footer {
 
 /* Shopping Cart styling */
 .cart-nav {
-  text-align: center; 
+  text-align: center;
   font-size: large;
 }
-#quantity {
+#center {
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+#shopping-cart {
+  opacity: 100%;
+}
+
+#quantity-1, #quantity-2, #quantity-3 {
   width: 30px;
   height: 20px;
 }
 
+#cart-checkout {
+  text-align: center;
+  position: sticky;
+  left: 20%;
+  bottom: 0%;
+  padding-bottom: 10px;
+  background-color: white;
+}
+
+/* Featured Product Styling */
 #featured-product-prompt {
   position: absolute;
   top: 105px;
@@ -112,6 +131,7 @@ footer {
   color: red;
 }
 
+/* Product Styling */
 #product-one-prompt {
   position: absolute;
   top: 105px;

@@ -10,7 +10,7 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+    <script src="shopping-cart.js"></script>
 </head>
 
 <body>
@@ -25,7 +25,11 @@
         <li><a href="index.html">Home</a></li>
     </ul>
     <ul id="shopping-cart" class="sidenav right">
-        <div class="cart-nav-title cart-nav">Shopping Cart</div>
+        <div id="cart-nav" class="cart-nav-title cart-nav">Shopping Cart</div>
+        <div id="cart-checkout">
+            <p id="cart-total"></p>
+            <a class="waves-effect waves-light btn #6db0a9" href="payment-page.html">Proceed to Checkout</a>
+        </div>
     </ul>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -38,21 +42,21 @@
         <img id="product-one" src="snowboard-design-one.jpg" alt="BlazeBoard MKI">
         <p id="product-price">$499.99</p>
         <button type="button" id="more-info-button" onclick="location.href='information-page.html'">More Info.</button>
-        <button type="button" id="add-to-cart-button" onclick="#">Add to Cart</button>
+        <button type="button" id="add-to-cart-button" onclick="addItem(productsList[0])">Add to Cart</button>
     </div>
 
     <div id="product-two-prompt">BlazeBoard Premium<br>
         <img id="product-two" src="snowboard-design-two.jpg" alt="BlazeBoard Premium">
         <p id="product-price">$649.99</p>
         <button type="button" id="more-info-button" onclick="location.href='information-page.html'">More Info.</button>
-        <button type="button" id="add-to-cart-button" onclick="#">Add to Cart</button>
+        <button type="button" id="add-to-cart-button" onclick="addItem(productsList[1])">Add to Cart</button>
     </div>
     
     <div id="product-three-prompt">BlazeBoard Sport<br>
         <img id="product-three" src="snowboard-design-three.jpg" alt="BlazeBoard Sport">
         <p id="product-price">$599.99</p>
         <button type="button" id="more-info-button" onclick="location.href='information-page.html'">More Info.</button>
-        <button type="button" id="add-to-cart-button" onclick="#">Add to Cart</button>
+        <button type="button" id="add-to-cart-button" onclick="addItem(productsList[2])">Add to Cart</button>
     </div>
 
 </body>
