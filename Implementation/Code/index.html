@@ -1,22 +1,43 @@
+<!-- Identifies file type -->
 <!DOCTYPE html>
 
+<!--
+Note: Much of the initial code used in this website's HTML, CSS, and JavaScript files is sourced from W3Schools 
+      and Materialize, and various tags, elements, syntax, etc. were created in reference to these online sources.
+      https://www.w3schools.com/html/default.asp
+      https://www.w3schools.com/css/default.asp
+      https://materializecss.com/
+-->
+
+<!-- Identifies file language -->
 <html lang="en-us">
 
+<!-- Identifies page name; references external files and programs -->
 <head>
+
+    <!-- Identifies page name -->
     <title>BlazeBoards Home</title>
+    
+    <!-- References CSS styling file -->
     <link rel="stylesheet" href="styles.css">
+    
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+    
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <!-- References shopping-cart JavaScript program file -->
     <script src="shopping-cart.js"></script>
 
 </head>
 
+<!-- Contains contents related to the navigation bar, shopping cart, and other elements present on the page -->
 <body>
 
+    <!-- Formatting for navigation bar with links, logo, and identifying the currently active page -->
     <ul>
+
         <a href="index.html"><img src="blazeboards-logo.png" alt="BlazeBoards" height="85px" width="500px"></a>
         <li><a href="#" data-target="shopping-cart" class="sidenav-trigger"><img src="shopping-cart.png"
                     alt="shopping-cart" height="30px"></a></li>
@@ -24,24 +45,33 @@
         <li><a href="product-listing-page.html">Products</a></li>
         <li><a href="information-page.html">Information</a></li>
         <li><a href="index.html" class="active">Home</a></li>
+    
     </ul>
     
+    <!-- Configures the shopping-cart for use by the user -->
     <ul id="shopping-cart" class="sidenav right">
+        
         <div id="cart-nav" class="cart-nav-title cart-nav">Shopping Cart</div>
         <div id="cart-checkout">
             <p id="cart-total"></p>
             <a class="waves-effect waves-light btn #6db0a9" href="payment-page.html">Proceed to Checkout</a>
         </div>
+
     </ul>
     
+    <!-- Configures shopping-cart to react to webpage interactions by the user -->
     <script>
+
         document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('.sidenav');
             var instances = M.Sidenav.init(elems, { edge: 'right' });
         });
+  
     </script>
 
+    <!-- Displays the currently featured product, its price, and interactions to view more information and add it to the shopping-cart -->
     <div id="featured-product-prompt">This week's featured item:<br>
+        
         <img id="featured-board" src="snowboard-design-one.jpg" alt="BlazeBoard MKI">
         <p id="featured-board-name">
             BlazeBoard MKI<br>
@@ -51,10 +81,12 @@
             Info.</button>
         <button type="button" id="featured-add-to-cart" onclick="addItem(productsList[0])">Add to Cart</button>
         </p>
+    
     </div>
 
 </body>
 
+<!-- Identifies company-related information, contact information, and the mission statement -->
 <footer>
     
     About Us: BlazeBoards, Inc.<br>

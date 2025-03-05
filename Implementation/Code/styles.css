@@ -1,11 +1,15 @@
+/* Identifies file type */
 /*DOCTYPE css*/
 
 /*
-Navigation Bar
-Initial code sourced from W3Schools
-https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_float
+Note: Much of the initial code used in this website's HTML, CSS, and JavaScript files is sourced from W3Schools 
+      and Materialize, and various tags, elements, syntax, etc. were created in reference to these online sources.
+      https://www.w3schools.com/html/default.asp
+      https://www.w3schools.com/css/default.asp
+      https://materializecss.com/
 */
 
+/* Styling for background image of webpage */
 body {
   background-image: url(snowboarder-page-background.PNG);
   background-blend-mode: luminosity;
@@ -14,6 +18,7 @@ body {
 
 }
 
+/* Styling for navigation bar */
 ul {
   top: 0;
   left: 0;
@@ -25,10 +30,10 @@ ul {
   opacity: 80%;
 }
 
+/* Styling for navigation links */
 li {
   float: right;
 }
-
 
 li a {
   display: block;
@@ -40,19 +45,22 @@ li a {
   text-decoration: none;
 }
 
+/* Styling for active navigation links */
 a.active {
   background-color: #6db0a9;
 }
 
-/* Change the link color to gray on hover */
+/* Styling for navigation links when the cursor hovers over them */
 li a:hover {
   background-color: gray;
 }
 
+/* Styling for buttons when the cursor hovers over them */
 button:hover {
   background-color: darkslategray;
 }
 
+/* Styling for footer of page */
 footer {
   position: fixed;
   left: 0;
@@ -68,7 +76,7 @@ footer {
   text-align: center;
 }
 
-/* Shopping Cart styling */
+/* Styling for shopping cart */
 .cart-nav {
   text-align: center;
   font-size: large;
@@ -96,7 +104,7 @@ footer {
   background-color: white;
 }
 
-/* Featured Product Styling */
+/* Styling for featured product on home page */
 #featured-product-prompt {
   position: absolute;
   top: 105px;
@@ -131,7 +139,7 @@ footer {
   color: red;
 }
 
-/* Product Styling */
+/* Styling for products on products page */
 #product-one-prompt {
   position: absolute;
   top: 105px;
@@ -224,6 +232,7 @@ footer {
   width: 325px;
 }
 
+/* Styling for button to add the featured product to shopping-cart */
 #featured-add-to-cart {
   position: absolute;
   bottom: 130px;
@@ -234,6 +243,7 @@ footer {
   font-size: 16px;
 }
 
+/* Styling for button to view more info related to the featured product */
 #featured-more-info {
   position: absolute;
   bottom: 165px;
@@ -244,10 +254,12 @@ footer {
   font-size: 16px;
 }
 
+/* Styling for product rating stars if they should be checked */
 .checked {
   color: orange;
 }
 
+/* Styling for customer testimonials on information page */
 #testimonial-one {
   position: absolute;
   top: 50px;
@@ -262,6 +274,7 @@ footer {
   line-height: 35px;
 }
 
+/* Styling for checkout form on payment page, including field labels and input requirements */
 #checkout-form {
   position: absolute;
   top: 105px;
@@ -313,6 +326,7 @@ input[type=tel] {
   max-width: 450px;
 }
 
+/* Styling for order confirmation page */
 #order-confirmation {
   position: absolute;
   top: 105px;
@@ -328,6 +342,7 @@ input[type=tel] {
   font-weight: 500;
 }
 
+/* Styling for okay button on order confirmation page */
 #okay-button {
   position: relative;
   top: 25px;
@@ -336,6 +351,7 @@ input[type=tel] {
   width: 100px;
 }
 
+/* Styling for submit button on payment page */
 #submit-button {
   position: absolute;
   top: 275px;
@@ -345,6 +361,7 @@ input[type=tel] {
   width: 100px;
 }
 
+/* Styling for list of third-party retailers on other retailers page */
 #third-party-prompt {
   position: absolute;
   top: 105px;
@@ -365,6 +382,14 @@ input[type=tel] {
   left: 190px;
 }
 
+#third-party-companies {
+  background-color: transparent;
+  position: absolute;
+  top: 50px;
+  left: 300px;
+}
+
+/* Styling for back button on other retailers page */
 #back-button {
   position: absolute;
   top: 325px;
@@ -372,11 +397,4 @@ input[type=tel] {
   font-size: 16px;
   height: 25px;
   width: 100px;
-}
-
-#third-party-companies {
-  background-color: transparent;
-  position: absolute;
-  top: 50px;
-  left: 300px;
 }

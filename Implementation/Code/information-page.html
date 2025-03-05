@@ -1,25 +1,46 @@
+<!-- Identifies file type -->
 <!DOCTYPE html>
 
+<!--
+Note: Much of the initial code used in this website's HTML, CSS, and JavaScript files is sourced from W3Schools 
+      and Materialize, and various tags, elements, syntax, etc. were created in reference to these online sources.
+      https://www.w3schools.com/html/default.asp
+      https://www.w3schools.com/css/default.asp
+      https://materializecss.com/
+-->
+
+<!-- Identifies file language -->
 <html lang="en-us">
 
+<!-- Identifies page name; references external files and programs -->
 <head>
+
+    <!-- Identifies page name -->
     <title>BlazeBoards Information</title>
+    
+    <!-- References CSS styling file -->
     <link rel="stylesheet" href="styles.css">
+    
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+    
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <!-- References shopping-cart JavaScript program file -->
     <script src="shopping-cart.js"></script>
-
+    
     <!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
+<!-- Contains contents related to the navigation bar, shopping cart, and other elements present on the page -->
 <body>
 
+    <!-- Formatting for navigation bar with links, logo, and identifying the currently active page -->
     <ul>
+
         <a href="index.html"><img src="blazeboards-logo.png" alt="BlazeBoards" height="85px" width="500px"></a>
         <li><a href="#" data-target="shopping-cart" class="sidenav-trigger"><img src="shopping-cart.png"
                     alt="shopping-cart" height="30px"></a></li>
@@ -27,24 +48,33 @@
         <li><a href="product-listing-page.html">Products</a></li>
         <li><a href="information-page.html" class="active">Information</a></li>
         <li><a href="index.html">Home</a></li>
+    
     </ul>
     
+    <!-- Configures the shopping-cart for use by the user -->
     <ul id="shopping-cart" class="sidenav right">
+        
         <div id="cart-nav" class="cart-nav-title cart-nav">Shopping Cart</div>
         <div id="cart-checkout">
             <p id="cart-total"></p>
             <a class="waves-effect waves-light btn #6db0a9" href="payment-page.html">Proceed to Checkout</a>
         </div>
+
     </ul>
     
+    <!-- Configures shopping-cart to react to webpage interactions by the user -->
     <script>
+
         document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('.sidenav');
             var instances = M.Sidenav.init(elems, { edge: 'right' });
         });
+   
     </script>
 
+    <!-- Displays product's customer ratings, testimonials, and interactions to add it to shopping-cart and navigate back to the products page -->
     <div id="product-one-prompt">BlazeBoard MKI<br>
+        
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
@@ -55,9 +85,12 @@
         <p id="product-price">$499.99</p>
         <button type="button" id="more-info-button" onclick="location.href='product-listing-page.html'">Products</button>
         <button type="button" id="add-to-cart-button" onclick="addItem(productsList[0])">Add to Cart</button>
+    
     </div>
 
+    <!-- Displays product's customer ratings, testimonials, and interactions to add it to shopping-cart and navigate back to the products page -->
     <div id="product-two-prompt">BlazeBoard Premium<br>
+        
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
@@ -68,9 +101,12 @@
         <p id="product-price">$649.99</p>
         <button type="button" id="more-info-button" onclick="location.href='product-listing-page.html'">Products</button>
         <button type="button" id="add-to-cart-button" onclick="addItem(productsList[1])">Add to Cart</button>
+    
     </div>
     
+    <!-- Displays product's customer ratings, testimonials, and interactions to add it to shopping-cart and navigate back to the products page -->
     <div id="product-three-prompt">BlazeBoard Sport<br>
+        
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
@@ -81,10 +117,12 @@
         <p id="product-price">$599.99</p>
         <button type="button" id="more-info-button" onclick="location.href='product-listing-page.html'">Products</button>
         <button type="button" id="add-to-cart-button" onclick="addItem(productsList[2])">Add to Cart</button>
+    
     </div>
 
 </body>
 
+<!-- Identifies company-related information, contact information, and the mission statement -->
 <footer>
     
     About Us: BlazeBoards, Inc.<br>
