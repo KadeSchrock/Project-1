@@ -138,8 +138,8 @@ function checkoutTotal() {
 }
 
 function submitPayment() {
-    // redirect user to order confirmation page
-    window.location.href='order-confirmation.html'
+    // alert user of order confirmation
+    alert("Order Confirmed! Thanks for shopping with Blazeboards!")
 
     // convert cart object to string and move into session storage
     jsonString = JSON.stringify({total: 0});
