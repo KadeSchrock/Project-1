@@ -125,3 +125,10 @@ function updateItem(product) {
     jsonString = JSON.stringify(cart);
     sessionStorage.setItem("cart", jsonString);
 }
+
+function checkoutTotal() {
+    var cartValue = sessionStorage.getItem("cart");
+    cart = JSON.parse(cartValue);
+    document.getElementById("pay-num").innerHTML = "$" + cart.total;
+}
+// <input type="text" placeholder="###.##" pattern="[0-9]{1,6}.[0-9]{2}" id="pay-num" name="pay-num" required>
