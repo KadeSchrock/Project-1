@@ -6,15 +6,14 @@ In order to secure our website it is incredibly important to test, both to ensur
 	- Redirects lead to the correct webpage
 	- Cart button opens the cart
 	- Product buttons lead to the correct product
-	- Confirm payment button stores info and confirms payment
+	- Confirm payment button creates an encrypted version of the payment information
 - Items inside cart carry over between pages and sessions 
-- Payment info stores the correct information, and is encrypted
 - Test to ensure that when items are added to cart, the correct item is added 
 - All products have the correct information attached to them
 	- Products have the correct description and image connected to them
 
 ## Test for Security Vulnerabilities
-- Ensure payment encryption functions and that information can be decrypted once secured
+- Ensure payment encryption functions, and that the encrypted version matches the original once decrypted
 - Test Input vulnerabilities
 	- Test input validation for payment system.
 		- Ensure that input is a specific amount of characters and only comprised of numbers
