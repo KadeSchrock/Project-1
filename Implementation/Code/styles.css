@@ -313,10 +313,33 @@ input[type=tel] {
   max-width: 450px;
 }
 
-input[value="Submit"] {
+#order-confirmation {
+  position: absolute;
+  top: 105px;
+  left: 15px;
+  bottom: 140px;
+  right: 15px;
+  background-color: white;
+  opacity: 80%;
+  height: 365px;
+  width: 1250px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#okay-button {
   position: relative;
-  left: 575px;
   top: 25px;
+  font-size: 16px;
+  height: 25px;
+  width: 100px;
+}
+
+#submit-button {
+  position: absolute;
+  top: 275px;
+  left: 575px;
   font-size: 16px;
   height: 25px;
   width: 100px;
