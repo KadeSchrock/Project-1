@@ -77,6 +77,7 @@ function addItem(product) {
         cartTotal.innerHTML = "Total: $" + cart.total;
     }
 
+    // convert cart object to string and move into session storage
     jsonString = JSON.stringify(cart);
     sessionStorage.setItem("cart", jsonString);
 }
@@ -96,6 +97,7 @@ function removeItem(product) {
     // display total
     cartTotal.innerHTML = "Total: " + cart.total;
 
+    // convert cart object to string and move into session storage
     jsonString = JSON.stringify(cart);
     sessionStorage.setItem("cart", jsonString);
 }
@@ -106,14 +108,16 @@ function updateItem(product) {
 
     // if product is more than quantity
     if (cart[product.id].quantity > quantity) {
-        var newPrice = product.price * (cart[product.id].quantity - quantity)
         // reduce total
+        var newPrice = product.price * (cart[product.id].quantity - quantity)
         cart.total -= newPrice;
+        // round incase more than 2 decimal places used
         cart.total = Math.round(cart.total * 100) / 100
     } else {
-        var newPrice = product.price * (quantity - cart[product.id].quantity);
         // else increase total
+        var newPrice = product.price * (quantity - cart[product.id].quantity);
         cart.total += newPrice;
+        // round incase more than 2 decimal places used
         cart.total = Math.round(cart.total * 100) / 100
     }
     // update product quantity
@@ -122,6 +126,7 @@ function updateItem(product) {
     // display total
     cartTotal.innerHTML = "Total: " + cart.total;
 
+    // convert cart object to string and move into session storage
     jsonString = JSON.stringify(cart);
     sessionStorage.setItem("cart", jsonString);
 }
@@ -133,7 +138,10 @@ function checkoutTotal() {
 }
 
 function submitPayment() {
+    // redirect user to order confirmation page
     window.location.href='order-confirmation.html'
+
+    // convert cart object to string and move into session storage
     jsonString = JSON.stringify({total: 0});
     sessionStorage.setItem("cart", jsonString);
 
