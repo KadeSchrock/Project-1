@@ -62,7 +62,7 @@ function addItem(product) {
 
     } else {
         // create item card
-        var newElement = `<li id="product-${product.id}"><div class="col s12 m7"><div class="card horizontal center-align"><div class="card-stacked"><div class="card-content"><div class="card-image"><img src="${product.image}" id="center"></div><div id="card-text-content"><p id="product-name">${product.name}</p><p id="price">$${product.price}</p></div><label for="quantity-${product.id}">Quantity:</label>&ensp;<input type="number" name="quantity-${product.id}" id="quantity-${product.id}" value=1 min=1 max=${product.stock} onChange="updateItem(productsList[${product.id - 1}])">&ensp;<button onclick="removeItem(productsList[${product.id}])">Remove</button></div></div></div></div></li>`;
+        var newElement = `<li id="product-${product.id}"><div class="col s12 m7"><div class="card horizontal center-align"><div class="card-stacked"><div class="card-content"><div class="card-image"><img src="${product.image}" id="center"></div><div id="card-text-content"><p id="product-name">${product.name}</p><p id="price">$${product.price}</p></div><label for="quantity-${product.id}">Quantity:</label>&ensp;<input type="number" name="quantity-${product.id}" id="quantity-${product.id}" value=1 min=1 max=${product.stock} onChange="updateItem(productsList[${product.id}])">&ensp;<button onclick="removeItem(productsList[${product.id}])">Remove</button></div></div></div></div></li>`;
         // display item card
         element.insertAdjacentHTML('afterend', newElement);
         // add item to cart
@@ -104,7 +104,7 @@ function removeItem(product) {
 
 function updateItem(product) {
     var cartTotal = document.getElementById("cart-total");
-    const quantity = document.getElementById(`quantity-${product.id}`).value * 1;
+    const quantity = document.getElementById(`quantity-${product.id}`).value;
 
     // if product is more than quantity
     if (cart[product.id].quantity > quantity) {
