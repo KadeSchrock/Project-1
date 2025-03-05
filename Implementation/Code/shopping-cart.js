@@ -131,4 +131,11 @@ function checkoutTotal() {
     cart = JSON.parse(cartValue);
     document.getElementById("pay-num").innerHTML = "$" + cart.total;
 }
+
+function submitPayment() {
+    window.location.href='order-confirmation.html'
+    jsonString = JSON.stringify({total: 0});
+    sessionStorage.setItem("cart", jsonString);
+
+}
 // <input type="text" placeholder="###.##" pattern="[0-9]{1,6}.[0-9]{2}" id="pay-num" name="pay-num" required>
