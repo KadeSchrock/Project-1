@@ -139,7 +139,7 @@ function checkoutTotal() {
 
 function submitPayment() {
     // alert user of order confirmation
-    alert("Order Confirmed! Thanks for shopping with Blazeboards!")
+    alert("Order Confirmed! Thanks for shopping with Blazeboards! You may now exit this page.")
 
     // convert cart object to string and move into session storage
     jsonString = JSON.stringify({total: 0});
