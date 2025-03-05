@@ -6,15 +6,14 @@
     - Test product information by clicking on info button for each product and record what page it leads to
     - Test payment button
       - Complete a test order noting whether or not the webpage acts as intended after pressing the button
-      - Check if any new payment info was stored, decode it, then note whether it matches what was entered
+      - Check if the payment info was encrypted after pressing the button
 - Test cart functionality by adding item(s) to the cart then recording which items appear in the cart
 - Test cart continuity by adding items to cart, then recording items added to the cart after changing pages
 - Check each product listing and note whether the information connected to it matches the intended information
 ## Test for Security Vulnerabilities
 - Test encryption and decryption
   - Record information entered before completing a payment
-  - Record the information stored after completing a payment
-  - Record the information after decryption and compare with the information recorded before the payment was completed
+  - Record the encrypted version of the payment information, and whether it matches the original information once decrypted
 - Test for Input Vulnerability.
   - Test payment system input validation
     - Test by inputting forbidden characters then recording the result
