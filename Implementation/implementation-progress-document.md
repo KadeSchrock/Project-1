@@ -28,3 +28,36 @@
 * Removed the order-confirmation.html file because the method of notifying the user if their purchase is completed was altered
 * Removed selectors related to elements in the order-confirmation.html file from the styles.css file because they are no longer relevant
 * Tested functions of the website from beginning to end to compare the scope of the project to the created artifacts
+
+## Solomon Preston
+### Monday, March 3, 2025
+* By using [Materialize Sidnav Documentation](https://materializecss.com/sidenav.html) created basic structure of Shopping cart
+* Customized item card visuals using [Materialize Horizontal Card](https://materializecss.com/cards.html)
+* Created funtion addItem()
+  * Function made card element for item and added item to cart
+* Created removeItem()
+  * No functionality added
+### Tuesday, March 4, 2025
+* Added product data in a product list for retrieving data for processing
+* Cart object for handling what user wants to buy behind the scene
+* addItem() was given a means to access specific product data
+  * Items are now added to the cart
+  * If item is already in cart, quantity is increased
+  * cart total is adjusted after any change to teh shopping cart
+* removeItem() was also given a means to access specific product data
+  * items are now removed from the cart
+  * cart total is adjusted
+* New function updateItem(product) enables user to increase product quantity in the shopping cart
+  * cart quantity and total are adjusted
+* Upon any webpage loading, items are readded to the cart visually so user can see what is in their cart
+* All functions send data to the website session's storage for use across all of the websites pages
+* Made the payment page display cart total
+* Made submitPayment() function to clear shopping cart and inform user of order confirmation by redirecting user to order confirmation page
+* Added comment within code to roughly explain functionality
+### Wednesday, March 5, 2025
+* Tested and fixed shopping cart
+  * Indexing was being performed incorrectly
+* Tested payment form
+  * corrected certain input validation issues where users could enter characters in number input fields
+  * Made the payment page alert the user of order confirmation on form submission as opposed to redirect user to the order confirmation page
+  
