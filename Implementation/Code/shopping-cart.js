@@ -146,4 +146,3 @@ function submitPayment() {
     sessionStorage.setItem("cart", jsonString);
 
 }
-// <input type="text" placeholder="###.##" pattern="[0-9]{1,6}.[0-9]{2}" id="pay-num" name="pay-num" required>
