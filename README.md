@@ -36,13 +36,13 @@ Rough Problem Statement- We are seeking to create a website designed to sell sno
     
     1. [Level 0 Data Flow Diagram](https://github.com/KadeSchrock/Project-1/blob/main/Design/Diagrams/level0-dfd.jpg)
        
-    2. [Level 1 Home Page Data Flow Diagram](https://github.com/KadeSchrock/Project-1/blob/main/Design/Diagrams/level1-home-page-dfd-v2.jpg)
+    2. [Level 1 Home Page Data Flow Diagram](https://github.com/KadeSchrock/Project-1/blob/main/Design/Diagrams/level1-home-page-dfd.jpg)
        
-    3. [Level 1 Information Page Data Flow Diagram](https://github.com/KadeSchrock/Project-1/blob/main/Design/Diagrams/level1-home-page-dfd-v2.jpg)
+    3. [Level 1 Information Page Data Flow Diagram](https://github.com/KadeSchrock/Project-1/blob/main/Design/Diagrams/level1-information-page-dfd.jpg)
        
     4. [Level 1 Payment System Data Flow Diagram](https://github.com/KadeSchrock/Project-1/blob/main/Design/Diagrams/level1-payment-system-dfd.jpg)
        
-    5. [Level 1 Product Listing Page Data Flow Diagram](https://github.com/KadeSchrock/Project-1/blob/main/Design/Diagrams/level1-product-listing-page-dfd.jpg)
+    5. [Level 1 Product Listing Page Data Flow Diagram](https://github.com/KadeSchrock/Project-1/blob/main/Design/Diagrams/level1-product-listing-page-dfd-v2.jpg)
         
     6. [UML Use Case Diagram](https://github.com/KadeSchrock/Project-1/blob/main/Design/Diagrams/uml-use-case-diagram.png)
 
