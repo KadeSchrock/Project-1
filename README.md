@@ -52,8 +52,10 @@ Rough Problem Statement- We are seeking to create a website designed to sell sno
     
       1. [Programming](https://github.com/KadeSchrock/Project-1/tree/main/Implementation/Code)
          
-      2. [Implementation Progress Document](https://github.com/KadeSchrock/Project-1/blob/main/Implementation/implementation-progress-document.md)
-         
+      2. [Implementation Progress Document](https://github.com/KadeSchrock/Project-1/blob/main/Implementation/Documentation/implementation-progress-document.md)
+      
+      3. [Program Documentation](https://github.com/KadeSchrock/Project-1/blob/main/Implementation/Documentation/program-documentation.md)
+ 
   - Testing
     
       1. [Testing Overview Document](https://github.com/KadeSchrock/Project-1/blob/main/Implementation/Testing/testing-overview.md)
