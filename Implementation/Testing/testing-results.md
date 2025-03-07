@@ -29,7 +29,7 @@
 * Check each product listing and note whether the information connected to it matches the intended information
     * Result: Yes, each product listing connects to the correct name, price, and picture when clicked on.
 ## Test for Security Vulnerabilities
-* Test encruption and decryption
+* Test encryption and decryption (could not succesfully implement encryption)
   * Record information entered before completing a payment
     * Result: 
   * Record the encrypted version of the payment information, and whether it matches the original information once decrypted
@@ -56,3 +56,6 @@
       * Record whether or not it broke any website elements or if the cart did not work as intended, and at which point they broke
         * Inputted the following items into the shopping cart: MKI - 32 items, Premium - 20 items, Sport - 36 items
            * Result: When I proceeded to the checkout page, the correct total was displayed. After entering valid inputs into each payment field and clicking submit, the payment total was reset to $0.00. When I redirected back to the homepage and clicked on the shopping cart, it was empty as it should have been.
+## Web Testing and automatic updates
+ * Automatic Updates Result: could not succesfully find a way to automatically deploy updates when the code base is updated
+ * Web Testing result: All functions work as intended within the web browser
