@@ -22,3 +22,6 @@
   - Test shopping cart
     - Submit a large number of multiple types of items to the cart
       - Record whether or not it broke any website elements or if the cart did not work as intended, and at which point they broke
+## Test for Automated Website Updates / Website hosting functionality
+- Test to see if automatic website updates are possible with docker container on TrueNas
+- Test if all systems work once the website is hosted on Galdoran.org
